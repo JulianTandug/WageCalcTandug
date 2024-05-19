@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/employeeName"
+        android:layout_width="214dp"
+        android:layout_height="105dp"
+        android:text="Employee Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <RadioButton
+        android:id="@+id/btnFullTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="39dp"
+        android:text="Full Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/employeeName" />
+
+    <RadioButton
+        android:id="@+id/btnPartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="12dp"
+        android:text="Part Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFullTime" />
+
+    <RadioButton
+        android:id="@+id/btnProbationary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="15dp"
+        android:text="Probitionary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPartTime" />
+
+    <TextView
+        android:id="@+id/employeeHours"
+        android:layout_width="248dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="19dp"
+        android:text="Employee Hours"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProbationary" />
+
+    <RadioGroup
+        android:id="@+id/employeeType"
+        android:layout_width="126dp"
+        android:layout_height="171dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnProbationary"
+        app:layout_constraintEnd_toEndOf="@+id/employeeName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/employeeName"
+        app:layout_constraintTop_toTopOf="@+id/btnFullTime"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="56dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/employeeHours"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/employeeHours"
+        app:layout_constraintTop_toBottomOf="@+id/employeeHours" />
+</androidx.constraintlayout.widget.ConstraintLayout>
